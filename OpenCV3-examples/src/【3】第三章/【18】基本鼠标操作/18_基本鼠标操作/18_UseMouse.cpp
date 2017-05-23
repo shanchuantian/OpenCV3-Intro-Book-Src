@@ -51,7 +51,7 @@ int main( int argc, char** argv )
 	Mat srcImage(600, 800,CV_8UC3), tempImage;
 	srcImage.copyTo(tempImage);
 	g_rectangle = Rect(-1,-1,0,0);
-	srcImage = Scalar::all(0);
+	srcImage = Scalar::all(0); // 0:画板是黑色， 255：画板是白色
 
 	//【2】设置鼠标操作回调函数
 	namedWindow( WINDOW_NAME );
