@@ -97,7 +97,7 @@ int main( int argc, char** argv )
 	createTrackbar( TrackbarName, WINDOW_NAME, &g_nAlphaValueSlider, g_nMaxAlphaValue, on_Trackbar );
 
 	//结果在回调函数中显示
-	on_Trackbar( g_nAlphaValueSlider, 0 );
+	on_Trackbar( g_nAlphaValueSlider, 0 );// 我：用于第一次显示，可以注释，移动一下滑块就图像就会出现，因为调用了on_Trackbar
 
 	//按任意键退出
 	waitKey(0);
