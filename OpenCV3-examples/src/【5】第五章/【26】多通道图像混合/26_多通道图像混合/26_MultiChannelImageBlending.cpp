@@ -76,7 +76,7 @@ bool  MultiChannelBlending()
 	Mat logoImage;
 	vector<Mat> channels;
 	Mat  imageBlueChannel;
-
+    
 	//=================【蓝色通道部分】=================
 	//	描述：多通道混合-蓝色分量部分
 	//============================================
@@ -92,7 +92,7 @@ bool  MultiChannelBlending()
 	split(srcImage,channels);//分离色彩通道
 
 	//【3】将原图的蓝色通道引用返回给imageBlueChannel，注意是引用，相当于两者等价，修改其中一个另一个跟着变
-	imageBlueChannel= channels.at(0);
+	imageBlueChannel= channels.at(0); // 拷贝构造函数都只复制矩阵头
 	//【4】将原图的蓝色通道的（500,250）坐标处右下方的一块区域和logo图进行加权操作，将得到的混合结果存到imageBlueChannel中
 	addWeighted(imageBlueChannel(Rect(500,250,logoImage.cols,logoImage.rows)),1.0,
 		logoImage,0.5,0,imageBlueChannel(Rect(500,250,logoImage.cols,logoImage.rows)));

@@ -53,8 +53,8 @@ int main(   )
 	g_dstImage = Mat::zeros( g_srcImage.size(), g_srcImage.type() );
 
 	//设定对比度和亮度的初值
-	g_nContrastValue=80;
-	g_nBrightValue=80;
+	g_nContrastValue=100;
+	g_nBrightValue=0;
 
 	//创建窗口
 	namedWindow("【效果图窗口】", 1);

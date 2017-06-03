@@ -11,9 +11,10 @@
 //---------------------------------【头文件、命名空间包含部分】-------------------------------
 //		描述：包含程序所使用的头文件和命名空间
 //------------------------------------------------------------------------------------------------                                                                                 
+#include <iostream>
+
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
-#include <iostream>
 
 using namespace cv;
 using namespace std;

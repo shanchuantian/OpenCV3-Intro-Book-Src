@@ -573,7 +573,7 @@ int main( )
 	}
 	 //输出图像   
 	imshow("原始图像",image0);
-	imshow("结果",image2);
+	//imshow("结果",image2);
 	imshow("图像结果",image1);
 
 	// 输出平均执行时间
