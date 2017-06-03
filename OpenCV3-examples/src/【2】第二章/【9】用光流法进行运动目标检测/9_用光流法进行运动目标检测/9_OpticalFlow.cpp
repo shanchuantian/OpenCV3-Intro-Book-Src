@@ -85,7 +85,7 @@ int main()
 	Mat frame;
 	Mat result;
 
-	VideoCapture capture("1.avi");
+	VideoCapture capture("1.avi"); 
 
 	help();
 	if(capture.isOpened())	// 摄像头读取文件开关
